@@ -10,7 +10,6 @@ RUN wget -O /var/www/html/casinova.zip https://templated.live/casinova/download/
 
 WORKDIR /var/www/html
 
-
 RUN unzip casinova.zip && rm -f casinova.zip
 
 
