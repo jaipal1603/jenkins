@@ -14,6 +14,7 @@ WORKDIR /var/www/html
 RUN unzip casinova.zip && rm -f casinova.zip
 
 
+
 EXPOSE 90
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
