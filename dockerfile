@@ -8,12 +8,10 @@ RUN yum install httpd zip unzip wget -y
 
 RUN wget -O /var/www/html/casinova.zip https://templated.live/casinova/download/casinova.zip
 
-
-
 WORKDIR /var/www/html
 
 RUN unzip casinova.zip && rm -f casinova.zip
 
-EXPOSE 80
+EXPOSE 90
 
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
